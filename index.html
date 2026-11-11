@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionário de Segurança Digital</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <div>
+          <p class="eyebrow">Pesquisa extensionista</p>
+          <h1>Segurança Digital</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="container tabs-container">
+      <div class="tab-bar" role="tablist" aria-label="Navegação do questionário">
+        <button type="button" class="tab-btn active" data-tab="survey" role="tab" aria-selected="true">Questionário</button>
+        <button type="button" class="tab-btn" data-tab="dashboard" role="tab" aria-selected="false">Dashboard</button>
+      </div>
+
+      <div class="tab-panel active" id="surveyTab" role="tabpanel" aria-label="Questionário">
+        <section class="panel form-panel">
+          <div class="heading-block">
+            <h2>Questionário</h2>
+            <p>Responda as perguntas abaixo e finalize com o termo de autorização.</p>
+          </div>
+
+          <form id="surveyForm">
+            <div class="section">
+              <h3>Perfil</h3>
+
+              <div class="question">
+                <label>1. Faixa etária</label>
+                <div class="options">
+                  <label><input type="radio" name="q1" value="Menos de 30" required /> Menos de 30</label>
+                  <label><input type="radio" name="q1" value="30 a 49" /> 30 a 49</label>
+                  <label><input type="radio" name="q1" value="50 a 59" /> 50 a 59</label>
+                  <label><input type="radio" name="q1" value="60 ou mais" /> 60 ou mais</label>
+                </div>
+              </div>
+
+              <div class="question">
+                <label>2. Com que frequência você usa o celular para internet?</label>
+                <div class="options">
+                  <label><input type="radio" name="q2" value="Todo dia" required /> Todo dia</label>
+                  <label><input type="radio" name="q2" value="Algumas vezes por semana" /> Algumas vezes por semana</label>
+                  <label><input type="radio" name="q2" value="Raramente" /> Raramente</label>
+                </div>
+              </div>
+
+              <div class="question">
+                <label>3. Quais apps você mais usa?</label>
+                <div class="options check-grid">
+                  <label><input type="checkbox" name="q3" value="WhatsApp" /> WhatsApp</label>
+                  <label><input type="checkbox" name="q3" value="Facebook" /> Facebook</label>
+                  <label><input type="checkbox" name="q3" value="Instagram" /> Instagram</label>
+                  <label><input type="checkbox" name="q3" value="Banco" /> Banco</label>
+                  <label><input type="checkbox" name="q3" value="Outros" /> Outros</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="section">
+              <h3>Experiência com golpes</h3>
+
+              <div class="question">
+                <label>4. Você já recebeu mensagem, ligação ou link suspeito?</label>
+                <div class="options">
+                  <label><input type="radio" name="q4" value="Sim" required /> Sim</label>
+                  <label><input type="radio" name="q4" value="Não" /> Não</label>
+                  <label><input type="radio" name="q4" value="Não sei" /> Não sei</label>
+                </div>
+              </div>
+
+              <div class="question">
+                <label>5. Você já caiu em algum golpe digital?</label>
+                <div class="options">
+                  <label><input type="radio" name="q5" value="Sim" required /> Sim</label>
+                  <label><input type="radio" name="q5" value="Não" /> Não</label>
+                  <label><input type="radio" name="q5" value="Quase caí" /> Quase caí</label>
+                </div>
+              </div>
+
+              <div class="question">
+                <label>6. Se caiu ou quase caiu, de que tipo?</label>
+                <div class="options">
+                  <label><input type="radio" name="q6" value="Falso parente pedindo dinheiro" /> Falso parente pedindo dinheiro</label>
+                  <label><input type="radio" name="q6" value="Link falso" /> Link falso</label>
+                  <label><input type="radio" name="q6" value="Pix" /> Pix</label>
+                  <label><input type="radio" name="q6" value="Falsa central do banco" /> Falsa central do banco</label>
+                  <label><input type="radio" name="q6" value="Outro" /> Outro</label>
+                  <label><input type="radio" name="q6" value="Não se aplica" /> Não se aplica</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="section">
+              <h3>Conhecimento e comportamento</h3>
+
+              <div class="question">
+                <label>7. Você sabe identificar se uma mensagem ou site é falso?</label>
+                <div class="options">
+                  <label><input type="radio" name="q7" value="Sim" required /> Sim</label>
+                  <label><input type="radio" name="q7" value="Mais ou menos" /> Mais ou menos</label>
+                  <label><input type="radio" name="q7" value="Não" /> Não</label>
+                </div>
+              </div>
+
+              <div class="question">
+                <label>8. Você usa senhas diferentes em cada app ou conta?</label>
+                <div class="options">
+                  <label><input type="radio" name="q8" value="Sim" required /> Sim</label>
+                  <label><input type="radio" name="q8" value="Não" /> Não</label>
+                  <label><input type="radio" name="q8" value="Não sei" /> Não sei</label>
+                </div>
+              </div>
+
+              <div class="question">
+                <label>9. Você ativa a verificação em duas etapas no WhatsApp ou no banco?</label>
+                <div class="options">
+                  <label><input type="radio" name="q9" value="Sim" required /> Sim</label>
+                  <label><input type="radio" name="q9" value="Não" /> Não</label>
+                  <label><input type="radio" name="q9" value="Não sei o que é" /> Não sei o que é</label>
+                </div>
+              </div>
+
+              <div class="question">
+                <label>10. Você verifica a origem de uma mensagem antes de clicar em links ou responder?</label>
+                <div class="options">
+                  <label><input type="radio" name="q10" value="Sempre" required /> Sempre</label>
+                  <label><input type="radio" name="q10" value="Às vezes" /> Às vezes</label>
+                  <label><input type="radio" name="q10" value="Nunca" /> Nunca</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="section authorization">
+              <h3>Termo de autorização de participação</h3>
+              <blockquote>
+                <p>
+                  <strong>Termo de Autorização</strong>
+                </p>
+                <p>
+                  Eu, <input type="text" name="nome" placeholder="Nome completo" class="inline-input" />,
+                  autorizo o uso das minhas respostas, de forma anônima, no trabalho extensionista “Segurança Digital” do estudante Icaro Rodrigues Santos, do curso de ADS da UniFECAF, para fins exclusivamente acadêmicos.
+                </p>
+                <div class="meta-row">
+                  <label>Data: <input type="date" name="dataAutorizacao" /></label>
+                  <label>Assinatura: <input type="text" name="assinatura" placeholder="Assinatura" class="inline-input" /></label>
+                </div>
+              </blockquote>
+            </div>
+
+            <div class="actions">
+              <button type="submit" class="primary-btn">Salvar resposta</button>
+              <button type="button" id="exportCsvBtn" class="secondary-btn">Exportar CSV</button>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <div class="tab-panel" id="dashboardTab" role="tabpanel" aria-label="Dashboard" hidden>
+        <aside class="panel dashboard-panel">
+          <div class="dashboard-header">
+            <h2>Dashboard</h2>
+            <button type="button" id="toggleAdminBtn" class="ghost-btn">Acesso restrito</button>
+          </div>
+
+          <div class="admin-login hidden" id="adminLoginBox">
+            <label for="adminPassword">Senha administrativa</label>
+            <div class="admin-login-row">
+              <input id="adminPassword" type="password" placeholder="Digite a senha" />
+              <button type="button" id="adminLoginBtn" class="primary-btn small-btn">Entrar</button>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card accent">
+              <span>Total</span>
+              <strong id="totalRespondentes">0</strong>
+            </div>
+            <div class="stat-card">
+              <span>Receberam golpe</span>
+              <strong id="totalGolpes">0</strong>
+            </div>
+            <div class="stat-card">
+              <span>Educação digital</span>
+              <strong id="educacaoNivel">0%</strong>
+            </div>
+          </div>
+
+          <div class="dashboard-section">
+            <h3>Golpes mais comuns</h3>
+            <div id="golpesMaisComuns" class="bars"></div>
+          </div>
+
+          <div class="dashboard-section">
+            <h3>Nível de educação para não cair em golpes</h3>
+            <div class="score-box">
+              <div class="score-label-row">
+                <span id="scoreLabel">Em análise</span>
+                <strong id="scoreValue">0%</strong>
+              </div>
+              <div class="progress-track">
+                <span id="scoreProgress"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-section admin-only hidden" id="adminResponsesBox">
+            <h3>Respostas cadastradas</h3>
+            <div class="admin-actions">
+              <button type="button" id="resetResponsesBtn" class="secondary-btn small-btn">Limpar respostas</button>
+            </div>
+            <div id="adminResponsesList" class="admin-list"></div>
+          </div>
+
+          <div class="dashboard-section">
+            <h3>Resumo</h3>
+            <ul id="resumoLista" class="summary-list"></ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
