@@ -170,9 +170,10 @@ export default async (req) => {
       const nextEntries = [...entries, normalized];
       await writeEntries(nextEntries);
       return jsonResponse(200, { success: true, count: nextEntries.length });
-    } catch {
-      return jsonResponse(400, { error: 'Dados inválidos.' });
-    }
+    } catch (error) {
+     console.error('Erro no POST /api/survey:', error);
+     return jsonResponse(400, { error: 'Dados inválidos.' });
+   }
   }
 
   if (req.method === 'DELETE' || url.searchParams.get('reset') === 'true') {
